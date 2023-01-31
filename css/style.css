@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #0c0344;
+}
+
+/* estilos del area de busqueda*/
+
+
+/* estilos de la cabecera de iconos*/
+
+.menu { grid-area: menu; 
+background-color: #ffffff;
+
+position: relative;
+
+width: 100%;
+height: 90px;
+
+display:flex;
+flex-direction: row;
+
+
+}
+
+
+.menu .box {
+    
+
+    width: 200px;
+    height: 45px;
+   
+    overflow: hidden;
+   
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+
+.menu .box:hover{
+
+    
+    
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    
+    background-color: rgb(219, 216, 216);
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.5em;
+    text-align: center;
+
+    background-color: rgb(168, 166, 166);
+
+   
+}
+
+
+
+
+.lateral{ grid-area: lateral;
+    background-color: #0c0344;
+    display: flex;
+     flex-direction: column;
+     position: relative;
+ 
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lateral .imagen  {
+
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: #0c0344;
+
+}
+
+#imgpersonal  {
+
+    height:90%;
+    width: 90%;
+    border-radius: 50%;
+     border-style: solid;
+     border-color: white;
+
+}
+
+
+.lateral .titulo  {
+
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: #0c0344;
+    padding-top: 20px;
+    color:white;
+     padding-left: 20%;
+      font-family: Haettenschweiler;
+      font-size:20px;
+
+}
+
+
+.lateral .titulo  p{
+
+    background-color: #0c0344;
+    color:white;
+     padding-left: 20%;
+      font-family: Haettenschweiler;
+      font-size:20px;
+
+}
+
+
+.lateral .box{
+
+   
+    width: 200px;
+    height: 45px;
+   
+    overflow: hidden;
+   
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+
+.imgdivision  {
+
+    height:2px;
+    width: 100%;
+    margin-left: 10%;
+    
+     border-style: solid;
+     border-color: white;
+    border-bottom-left-radius: 50%;
+
+}
+
+
+
+
+
+
+
+.main { grid-area: main; 
+
+    background-color: #ffffff;
+   
+
+}
+
+.grid-contenedor {
+    display: grid;
+
+    grid-template-columns: 2fr 5fr 5fr;
+    grid-template-rows: 60px 60px auto;
+    grid-template-areas:
+      'lateral menu menu '
+      'lateral main main '
+      'lateral main main ';
+    gap: 10px;
+  
+    
+
+}
+
+.grid-contenedor > div {
+  
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+
+  }
+
+
+
+body{
+    
+    height:100%;
+   overflow:hidden;
+    
+    background:#f2f8fa;
+}
+
+
+
+
+
+/*  version css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contenedor del menu izq*/
+
+.menu-container {
+    
+    position: relative;
+    width: 200px;
+    height: 800px;
+    
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+
+
+.menu-container .box {
+    
+   
+    width: 200px;
+    height: 45px;
+   
+    overflow: hidden;
+   
+    position: relative;
+    display: inline-block;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+
+
+ .menu-container .box:hover{
+
+    
+    width: 200px;
+    height: 45px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(121, 120, 120);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    filter: brightness(50%);
+   
+}
+
+
+/* texto dentro de cada contenedor lateral menu */
+
+
+.menu-container .box .icoimg {
+    position:absolute;
+    background-color: #ffffff;
+    max-width: 20px;
+    max-height: 20px;
+    
+    
+}
+
+
+.menu-container .box .icoimg:hover {
+    padding-right: 20px;
+   background-color: #ffffff;
+    max-width: 20px;
+    max-height: 20px;
+    filter: grayscale(80%);
+    position:absolute;
+}
+
+
+/* contenedor de la caja central */
+
+.card-container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y:scroll;
+    max-height: 900px;
+  }
+
+
+
+  /* diseño caja */
+
+  .card-container .card{
+    margin: 10px;
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px (0,0,0,0.25);
+
+}
+
+
+ .card-container .card:hover{
+
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    
+    box-shadow: 0 15px 35px (0,0,0,0.25);
+    transition: 0.5s;
+    
+
+}
+
+
+
+.card-container .card .video{
+    position:absolute;
+    width: 100%;
+    height: 70%;
+  
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px (0,0,0,0.25);
+
+}
+
+
+.card-container .card .video img{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    
+}
+
+.card-container .card:hover .video img{
+
+    width: 100%;
+    height: 70%;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.card-container .card .details{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    left: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 40%;
+   
+}
+
+/* imagen de usuario car video  */
+
+
+.card-container .card .details .userimg {
+
+   padding-right: 10px;
+   
+   max-width: 80px;
+   max-height: 80px;
+   
+}
+
+/* descripcion del video*/
+
+.card-container .card .details a{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(29, 21, 21);
+    background:transparent;
+    font-size: 0.5em;
+    text-align: left;   
+
+}
+
+/* si está emitiendo en directo */
+
+.card-container .card .details .directo span{
+    order: 3;
+    padding: 2px 5px;
+    color: rgb(245, 242, 242);
+    background-color: #f50303;
+    border-radius: 2px;
+}
+
+
+/* si no está emitiendo en directo */
+
+.card-container .card .details .nodirecto span{
+    order: 3;
+    margin-top: 30px;
+    padding: 2px 5px;
+    color: rgb(245, 242, 242);
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+
+
+/* info del video   */
+
+.card-container .card .details .info{
+    order: 4;
+    color: rgb(88, 88, 88);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    
+}
+
+
+
+/* botones de ver mas de los card  */
+.card-container .card .boton{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  
+    background-color: #c2bcbc;
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    color: rgb(29, 21, 21);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+
+}
+
+
+/*  texto link botones de ver mas de los card  */
+.card-container .card .boton a{
+
+    font-size: 1.3em;
+    color: rgb(29, 21, 21);
+ 
+}
+
+.card-container .card .details .ver{
+    position: relative;
+}
+
+
+
+
