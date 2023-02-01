@@ -4,313 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Alberto Barberá" content="Inicio">
     <meta name="keywords" content="currículum,currículo">
     <meta name="description" content=" Currículum de  Alberto Barberá">
     <title>Currículum de Alberto Barberá </title>
     <!-- aqui declaro alguna clase de estylo para no repetir mucho los estilos-->
-    <style>
-        .textobody {
-            color: rgb(6, 6, 48);
-            font-family: Haettenschweiler;
-            font-size: 20px
-        }
 
-        .textoencabezados {
-            color: rgb(6, 6, 48);
-            font-family: Haettenschweiler;
-            font-size: 30px
-        }
-
-        .textofooter {
-            color: rgb(6, 6, 48);
-            font-family: Haettenschweiler;
-            font-size: 20px;
-            opacity: 50%
-        }
-
-        .textomenu {
-            color: white;
-            font-family: Haettenschweiler;
-            font-size: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-            text-decoration: none;
-
-        }
-
-        .boton {
-            background-color: rgb(6, 6, 48);
-            font-family: Arial;
-            font-size: 15px;
-            color: white;
-
-        }
-
-        h1 {
-            color: rgb(6, 6, 48);
-            font-family: Arial;
-        }
-
-        body {
-
-            background-image: url('images/fondo.jpg');
-
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        li {
-            color: rgb(6, 6, 48);
-            font-family: Arial;
-            font-size: 15px;
-
-
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- iniciamos una tabla para organizar el contenido contenido -->
-    <table>
+    <!-- iniciamos grid contenedor -->
+    <div class="grid-contenedor">
+
+        <!-- zona lateral -->
+
+        <div class="lateral">
 
 
-
-        <tr style="height: 100%;">
 
             <!-- iniciamos dos columnas una lateral con la imagen y adicionales y otra contenido -->
 
 
-            <td style="width: 20%;background-color: rgb(6, 6, 48);height: 100%;">
 
 
-                <!-- hacemos una división para la imagen propia -->
 
-                <div style="padding-left: 20%;padding-right: 20%;padding-top: 20%;padding-bottom: 20%">
-                    <img style="height:90%;width: 90%;border-radius: 50%; border-style: solid;border-color: white;"
-                        src="images/yo.jpg" alt="mi imagen de portafolio">
-                </div>
+            <!-- hacemos una división para la imagen propia -->
 
+            <div class="imagen">
+                <img id="imgpersonal" src="images/yo.jpg" alt="mi imagen de portafolio">
+            </div>
 
-                <div>
-                    <p
-                        style="padding-top: 20px;color:white; padding-left: 20%; font-family: Haettenschweiler;font-size:20px">
-                        LIFE STYLE
-                    </p>
 
-                    <!-- hacemos una division para la imagen de division por estética  ojo solo quiero que se pegue a la derecha no a la izquierda-->
-                    <img style="padding-left: 20%;height:90%;width: 81%;left: 0px;" src="images/linea.jpg"
-                        alt="linea de division">
-                </div>
+            <div class="titulo">
 
 
 
-                <table style="padding-left: 15%">
+                <p>
+                    LIFE STYLE
+                </p>
 
+            </div>
 
 
+       
 
+              <div >
 
 
-                    <!-- mis gustos-->
-                    <td>
-                        <p
-                            style="text-decoration:underline;padding-top: 20px;color:white; padding-left: 10px; font-family:Cambria;">
-                            Naturaleza:
-                        </p>
-                        <p style="color:white; padding-left: 10px; font-family:Cambria;font-style: normal;">
-                            Salir al campo <br>
-                            La montaña<br>
-                            La playa<br>
-                        </p>
 
-                    </td>
-                </table>
-                <table style="padding-left: 15%">
 
 
 
+                <!-- mis gustos-->
 
+                <p>
+                    Naturaleza:
+                </p>
+                <p>
+                    Salir al campo <br>
+                    La montaña<br>
+                    La playa<br>
+                </p>
 
-                    <td>
-                        <p
-                            style="padding-top: 20px;color:white; padding-left: 10px; font-family:Cambria;text-decoration:underline;">
-                            Deporte:
-                        </p>
-                        <p style="color:white; padding-left: 10px; font-family:Cambria;font-style: normal;">
-                            Padel<br>
-                            Running<br>
-                            Bike<br>
-                        </p>
-                    </td>
-                </table>
 
-                <!-- hacemos una division para la imagen de division por estética  ojo solo quiero que se pegue a la derecha no a la izquierda-->
-                <div>
+            </div>
+            <div style="padding-left: 15%">
 
 
-                    <img style="padding-left: 20%;height:90%;width: 81%;left: 0px;" src="images/linea.jpg"
-                        alt="linea de division">
-                </div>
 
-                <div>
-                    <!-- aquí simplemente inserto un . del mismo color del fondo para darle más longitud a la banda lateral -->
 
-                    <p style="padding-top: 900px;color:rgb(6, 6, 48); ">
-                        .
-                    </p>
-                </div>
 
 
-            </td>
+                <p>
+                    
+                    Deporte:
+                </p>
+                <p >
+                    Padel<br>
+                    Running<br>
+                    Bike<br>
+                </p>
 
+            </div>
 
 
-            <!-- comenzamos con la parte central y el menú de navegación -->
-            <td style="height: 100%;padding-left: 25px;padding-bottom: 35%;">
+         
 
-                <table>
-                    <td
-                        style="background-color:rgb(6, 6, 48);height: 50px;width:800px; padding-left: 20px;padding-right: 20px;">
 
-                        <nav id="Menu" style="text-align: center"><a class="textomenu" style="text-decoration:underline"
-                                href="index.html">Currículum</a> | <a class="textomenu"
-                                href="portfolio.html">Portfolio</a> | <a class="textomenu"
-                                href="contacto.html">Contacto</a>
-                        </nav>
-                    </td>
-                </table>
 
+        </div>
+        <!-- fin navegación lateral -->
 
-                <!-- parte principal y título. -->
-
-                <main>
-                    <p>
-                    <h1 style="padding-left: 20%;padding-top: 2%;">Mi currículum personal</h1>
-                    </p>
-                </main>
-
-                <!-- estudios -->
-
-                <table>
-
-                    <p class="textoencabezados" style="padding-left:10%"> Estudios<br> </p>
-
-                    <ul style="padding-left:10%">
-                        <li>
-                            EGB Colegio Público Villar Palasí (Orihuela)
-                        </li><br>
-                        <li>
-                            Bachillerato en IES Gabriel Miró (Orihuela)
-                        </li><br>
-                        <li>
-                            1999-2002 Relaciones Laborales Universidad de (Alicante)
-                        </li><br>
-                        <li>
-                            2002 Curso avanzado IBM redes y reparación de pcs (Alicante)
-                        </li><br>
-                        <li>
-                            2004 Curso de electrónica en las telecomunicaciones (Alicante)
-                        </li><br>
-                        <li>
-                            2004 Curso de reparación impresoras laser (Madrid)
-                        </li><br>
-                        <li>
-                            2006 Curso programación en Visual Fox Pro (Alicante)
-                        </li><br>
-                        <li>
-                            2012 Curso de virtualizacion servidores VMWARE (Madrid)
-                        </li><br>
-                        <li>
-                            2017 MBA online empresas tecnológicas (MAdrid)
-                        </li><br>
-                        <li>
-                            2018 MBA Gestión Empresarial Multisis (Orihuela)
-                        </li><br>
-                        <li>
-                            2020 Curso de Marketing digital FEMPA (Alicante)
-                        </li><br>
+        <!-- comenzamos con la parte central y el menú de navegación -->
+        <div class="menu" style="height: 100%;padding-left: 25px;padding-bottom: 35%;">
 
-                    </ul>
+            <div>
 
+                
 
-                    <!-- habilidades -->
+                <nav id="Menu" style="text-align: center"><a class="textomenu" style="text-decoration:underline"
+                        href="index.html">Currículum</a> | <a class="textomenu" href="portfolio.html">Portfolio</a> | <a
+                        class="textomenu" href="contacto.html">Contacto</a>
+                </nav>
 
+            </div>
 
-                    <p class="textoencabezados" style="padding-left:10%"> Skills<br> </p>
+        </div>
 
-                    <ul style="padding-left:10%">
-                        <li>
-                            Acces avanzado
-                        </li><br>
-                        <li>
-                            Excel avanzado
-                        </li><br>
-                        <li>
-                            Idioma Inglés B1
-                        </li><br>
-                        <li>
-                            Avanzado en SOs: W98,WXP,W2000,W2008,W2012,W2016,W2019
-                        </li><br>
-                        <li>
-                            Redes: Lan, routers, Wan
-                        </li><br>
 
-                        <li>
-                            Dinámico y trabajador
-                        </li><br>
-                        <li>
-                            Predispuesto a aprender cosas nuevas
-                        </li><br>
+        <!-- fin del menu -->
 
-                    </ul>
 
+        <!-- parte principal y título. -->
 
-                    <!-- experiencia -->
+        <div class="main">
+            <p>
+            <h1 style="padding-left: 20%;padding-top: 2%;">Mi currículum personal</h1>
+            </p>
 
-                    <p class="textoencabezados" style="padding-left:10%"> Experiencia<br> </p>
 
-                    <ul style="padding-left:10%">
+            <!-- estudios -->
 
-                        <li>
-                            1999 - 2002 Camarero fin de semana
-                        </li><br>
-                        <li>
-                            2001 - Comercial de telefonía
-                        </li><br>
 
 
-                        <li>
-                            2002 - Actualidad Gerente de empresa
-                        </li><br>
-                        <br>
+            <p class="textoencabezados" style="padding-left:10%"> Estudios<br> </p>
+
+            <ul style="padding-left:10%">
+                <li>
+                    EGB Colegio Público Villar Palasí (Orihuela)
+                </li><br>
+                <li>
+                    Bachillerato en IES Gabriel Miró (Orihuela)
+                </li><br>
+                <li>
+                    1999-2002 Relaciones Laborales Universidad de (Alicante)
+                </li><br>
+                <li>
+                    2002 Curso avanzado IBM redes y reparación de pcs (Alicante)
+                </li><br>
+                <li>
+                    2004 Curso de electrónica en las telecomunicaciones (Alicante)
+                </li><br>
+                <li>
+                    2004 Curso de reparación impresoras laser (Madrid)
+                </li><br>
+                <li>
+                    2006 Curso programación en Visual Fox Pro (Alicante)
+                </li><br>
+                <li>
+                    2012 Curso de virtualizacion servidores VMWARE (Madrid)
+                </li><br>
+                <li>
+                    2017 MBA online empresas tecnológicas (MAdrid)
+                </li><br>
+                <li>
+                    2018 MBA Gestión Empresarial Multisis (Orihuela)
+                </li><br>
+                <li>
+                    2020 Curso de Marketing digital FEMPA (Alicante)
+                </li><br>
 
+            </ul>
 
-                    </ul>
 
+            <!-- habilidades -->
 
-                    <tr>
-                        <td>
-                            <a class="textobody" style="padding-left: 150px;padding-top: 20px;" href="#Menu">volver al
-                                inicio</a>
-                        </td>
 
-                    </tr>
+            <p class="textoencabezados" style="padding-left:10%"> Skills<br> </p>
 
+            <ul style="padding-left:10%">
+                <li>
+                    Acces avanzado
+                </li><br>
+                <li>
+                    Excel avanzado
+                </li><br>
+                <li>
+                    Idioma Inglés B1
+                </li><br>
+                <li>
+                    Avanzado en SOs: W98,WXP,W2000,W2008,W2012,W2016,W2019
+                </li><br>
+                <li>
+                    Redes: Lan, routers, Wan
+                </li><br>
 
+                <li>
+                    Dinámico y trabajador
+                </li><br>
+                <li>
+                    Predispuesto a aprender cosas nuevas
+                </li><br>
 
+            </ul>
 
-                </table>
 
+            <!-- experiencia -->
 
-            </td>
+            <p class="textoencabezados" style="padding-left:10%"> Experiencia<br> </p>
 
-        </tr>
+            <ul style="padding-left:10%">
 
+                <li>
+                    1999 - 2002 Camarero fin de semana
+                </li><br>
+                <li>
+                    2001 - Comercial de telefonía
+                </li><br>
 
-    </table>
+
+                <li>
+                    2002 - Actualidad Gerente de empresa
+                </li><br>
+                <br>
+
+
+            </ul>
+
+
+            <tr>
+                <td>
+                    <a class="textobody" style="padding-left: 150px;padding-top: 20px;" href="#Menu">volver al
+                        inicio</a>
+                </td>
+
+            </tr>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+    </div>
 
 
 
