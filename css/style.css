@@ -8,17 +8,63 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-    background-color: #080235;
+   
+}
+
+
+
+/* estructura de la web*/
+
+
+.main { grid-area: main; 
+
+    
+
+}
+
+.grid-contenedor {
+    display: grid;
+
+    grid-template-columns: 2fr 5fr 5fr;
+    grid-template-rows: 60px 60px auto;
+    grid-template-areas:
+      'lateral menu menu '
+      'lateral main main '
+      'lateral main main ';
+    gap: 10px;
+    
+ 
+
+}
+
+.grid-contenedor > div {
+  
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+
+  }
+
+
+
+body {    
+    height:100%;
+   overflow:hidden;
+ 
 }
 
 
 
 
-/* estilos del menu suoperior*/
+
+
+
+
+/* estilos del menu superior*/
 
 .menu { grid-area: menu; 
 background-color: #080235;
-
+opacity: 80%;
 position: relative;
 
 width: 100%;
@@ -26,8 +72,6 @@ height: 90px;
 
 display:flex;
 justify-content: end;
-
-
 
 
 }
@@ -53,7 +97,7 @@ justify-content: end;
     text-align: center;
     padding-top: 5px;
     transition: 1s;
-    
+    opacity: 100%;
 }
 
 
@@ -74,27 +118,21 @@ justify-content: end;
     font-size: 0.5em;
     text-align: center;
     padding-top: 5px;
-transition: 1s;
+   
+
+   transition: 1s;
 
    
 }
 
-.menu .box a{ 
-    text-decoration: none;
-    background-color: rgb(219, 216, 216);
-    font-style:normal;
-    
-    
-position: relative;
-  }
+
 
   .menu .box a{ 
     text-decoration: none;
     background-color: transparent;
-    font-style:normal;
-
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
     color: #080235;
-    
 position: relative;
   }
 
@@ -104,10 +142,7 @@ position: relative;
 
     .menu .box a:link{ 
         text-decoration: none;
-        color:#080235;
-        font-style:normal;
-        
-        
+        color:#080235;   
 position: relative;
       }
   
@@ -118,17 +153,9 @@ position: relative;
       font-style:normal;
       color: #080235;
       text-decoration: none;
-      
-      
 position: relative;
     
     }
-
-
-
-
-
-
 
 
 
@@ -141,7 +168,6 @@ position: relative;
      flex-direction: column;
      position: relative;
      align-items: center;
-    
     display: flex;
     flex-direction: column;
 
@@ -221,6 +247,8 @@ position: relative;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size:20px;
 
+      background-image: url("images/fondo.jpg");
+
 }
 
 .lateral .seccion  p{
@@ -298,156 +326,9 @@ position: relative;
 
 
 
+/* contenedor con las habilidades central */
 
-
-
-/* estilos de la zona central*/
-
-
-.main { grid-area: main; 
-
-    
-   
-
-}
-
-.grid-contenedor {
-    display: grid;
-
-    grid-template-columns: 2fr 5fr 5fr;
-    grid-template-rows: 60px 60px auto;
-    grid-template-areas:
-      'lateral menu menu '
-      'lateral main main '
-      'lateral main main ';
-    gap: 10px;
-  
-    
-
-}
-
-.grid-contenedor > div {
-  
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-
-  }
-
-
-
-body{
-    
-    height:100%;
-   overflow:hidden;
-    
-    background:#f2f8fa;
-}
-
-
-
-
-
-/*  version css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* contenedor del menu izq*/
-
-.menu-container {
-    
-    position: relative;
-    width: 200px;
-    height: 800px;
-    
-    display: flex;
-    flex-direction: column;
- 
-    
-}
-
-
-.menu-container .box {
-    
-   
-    width: 200px;
-    height: 45px;
-   
-    overflow: hidden;
-   
-    position: relative;
-    display: inline-block;
-    background-color: #ffffff;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    
-
-}
-
-
-
- .menu-container .box:hover{
-
-    
-    width: 200px;
-    height: 45px;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: rgb(121, 120, 120);
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    filter: brightness(50%);
-   
-}
-
-
-/* texto dentro de cada contenedor lateral menu */
-
-
-.menu-container .box .icoimg {
-    position:absolute;
-    background-color: #ffffff;
-    max-width: 20px;
-    max-height: 20px;
-    
-    
-}
-
-
-.menu-container .box .icoimg:hover {
-    padding-right: 20px;
-   background-color: #ffffff;
-    max-width: 20px;
-    max-height: 20px;
-    filter: grayscale(80%);
-    position:absolute;
-}
-
-
-/* contenedor de la caja central */
-
-.card-container {
+.contenedor-central {
     max-width: auto;
     margin: 0 auto;
     padding: 10px;
@@ -455,69 +336,67 @@ body{
     flex-flow: row wrap;
     overflow-y:scroll;
     max-height: 900px;
+
+    background-image: url('images/fondo.jpg');
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
   }
 
 
 
   /* diseño caja */
 
-  .card-container .card{
+  .contenedor-central .card{
     margin: 10px;
     position: relative;
-    width: 400px;
-    height: 250px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px (0,0,0,0.25);
+    width: 520px;
+    height: 450px;
+    border-radius: 2px;
+    overflow: hidden; 
+    box-shadow: 2px 2px  2px 2px #888888;
+
 
 }
 
 
- .card-container .card:hover{
+ .contenedor-central .card:hover{
 
+    margin: 10px;
     position: relative;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-    
-    box-shadow: 0 15px 35px (0,0,0,0.25);
-    transition: 0.5s;
+    width: 520px;
+    height: 450px;
+    border-radius: 2px;
+    overflow: hidden; 
+    box-shadow: 2px 2px  2px 2px #888888;
     
 
 }
 
 
 
-.card-container .card .video{
-    position:absolute;
-    width: 100%;
-    height: 70%;
+
+
+
+.contenedor-central .card img{
   
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px (0,0,0,0.25);
-
-}
-
-
-.card-container .card .video img{
-    width: 100%;
-    height: 70%;
-    border-radius: 20px;
+    border-radius: 5px;
     
 }
 
-.card-container .card:hover .video img{
+.contenedor-central .card:hover img{
 
-    width: 100%;
-    height: 70%;
-    padding-bottom: 5px;
-    border-radius: 20px;
+   
+  
+    border-radius: 5px;
     overflow: hidden;
     
 }
 
-.card-container .card .details{
+.contenedor-central .card .details{
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -532,7 +411,7 @@ body{
 /* imagen de usuario car video  */
 
 
-.card-container .card .details .userimg {
+.contenedor-central .card .details .userimg {
 
    padding-right: 10px;
    
@@ -543,7 +422,7 @@ body{
 
 /* descripcion del video*/
 
-.card-container .card .details a{
+.contenedor-central .card .details a{
     
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -556,7 +435,7 @@ body{
 
 /* si está emitiendo en directo */
 
-.card-container .card .details .directo span{
+.contenedor-central .card .details .directo span{
     order: 3;
     padding: 2px 5px;
     color: rgb(245, 242, 242);
@@ -567,7 +446,7 @@ body{
 
 /* si no está emitiendo en directo */
 
-.card-container .card .details .nodirecto span{
+.contenedor-central .card .details .nodirecto span{
     order: 3;
     margin-top: 30px;
     padding: 2px 5px;
@@ -580,7 +459,7 @@ body{
 
 /* info del video   */
 
-.card-container .card .details .info{
+.contenedor-central .card .details .info{
     order: 4;
     color: rgb(88, 88, 88);
     margin-top: 10px;
@@ -593,7 +472,7 @@ body{
 
 
 /* botones de ver mas de los card  */
-.card-container .card .boton{
+.contenedor-central .card .boton{
 
     display: flex;
     justify-content: center;
@@ -616,14 +495,14 @@ body{
 
 
 /*  texto link botones de ver mas de los card  */
-.card-container .card .boton a{
+.contenedor-central .card .boton a{
 
     font-size: 1.3em;
     color: rgb(29, 21, 21);
  
 }
 
-.card-container .card .details .ver{
+.contenedor-central .card .details .ver{
     position: relative;
 }
 
