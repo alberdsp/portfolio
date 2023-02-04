@@ -17,7 +17,7 @@
 /* estilos del menu suoperior*/
 
 .menu { grid-area: menu; 
-background-color: #ffffff;
+background-color: #080235;
 
 position: relative;
 
@@ -25,27 +25,34 @@ width: 100%;
 height: 90px;
 
 display:flex;
-flex-direction: row;
+justify-content: end;
+
+
 
 
 }
 
 
+
+
+
+
 .menu .box {
     
-
-    width: 200px;
-    height: 45px;
    
-    overflow: hidden;
-   
-    position: relative;
-    display: inline-block;
-    background-color: #ffffff;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
     
+    background-color: rgb(138, 134, 134);
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 30px;
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 5px;
+    transition: 1s;
     
 }
 
@@ -59,17 +66,66 @@ flex-direction: row;
     height: 30px;
     border-radius: 10px;
     
-    background-color: rgb(219, 216, 216);
+    background-color:#ffffff;
     margin-top: 10px;
-    padding: 5px;
-    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 30px;
     font-size: 0.5em;
     text-align: center;
-
-    background-color: rgb(168, 166, 166);
+    padding-top: 5px;
+transition: 1s;
 
    
 }
+
+.menu .box a{ 
+    text-decoration: none;
+    background-color: rgb(219, 216, 216);
+    font-style:normal;
+    
+    
+position: relative;
+  }
+
+  .menu .box a{ 
+    text-decoration: none;
+    background-color: transparent;
+    font-style:normal;
+
+    color: #080235;
+    
+position: relative;
+  }
+
+
+
+
+
+    .menu .box a:link{ 
+        text-decoration: none;
+        color:#080235;
+        font-style:normal;
+        
+        
+position: relative;
+      }
+  
+
+
+
+.menu .box a:visited{ 
+      font-style:normal;
+      color: #080235;
+      text-decoration: none;
+      
+      
+position: relative;
+    
+    }
+
+
+
 
 
 
@@ -133,10 +189,9 @@ flex-direction: row;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 20%;
-    padding-bottom: 20%;
-   
+    padding-bottom: 10px;
     padding-top: 20px;
-    color:white;
+    color:rgb(138, 134, 134);
      padding-left: 20%;
       font-family: Haettenschweiler;
       font-size:20px;
@@ -146,8 +201,8 @@ flex-direction: row;
 
 .lateral .slogan  p{
     
-    color:white;
-  padding-left: 1px;
+    color:rgb(138, 134, 134);
+    padding-left: 1px;
       font-family: Haettenschweiler;
       font-size:25px;
    
@@ -185,13 +240,12 @@ flex-direction: row;
 
     color:rgb(255, 255, 255);
     padding-left: 1px;
-    font-weight:bold;
+    
     margin-bottom: 10px;
     margin-top: 20px;
     text-decoration: underline rgb(138, 134, 134);  
-
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size:22px;
+    font-family:'Haettenschweiler';
+    font-size:22px;
 
 }
 
@@ -217,7 +271,8 @@ flex-direction: row;
 
     height:2px;
     width: 100%;
-
+    margin-top: 70px;
+    margin-bottom: 40px;
     position: relative;
     align-content: flex-end;
      border-style: solid;
@@ -251,7 +306,7 @@ flex-direction: row;
 
 .main { grid-area: main; 
 
-    background-color: #ffffff;
+    
    
 
 }
