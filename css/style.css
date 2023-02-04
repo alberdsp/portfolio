@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+/* normalizamos*/
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-    background-color: #0c0344;
+    background-color: #080235;
 }
 
-/* estilos del area de busqueda*/
 
 
-/* estilos de la cabecera de iconos*/
+
+/* estilos del menu suoperior*/
 
 .menu { grid-area: menu; 
 background-color: #ffffff;
@@ -71,12 +74,17 @@ flex-direction: row;
 
 
 
+
+
+/* estilos de la zona lateral izq*/
+
+
 .lateral{ grid-area: lateral;
-    background-color: #0c0344;
+    background-color: #080235;
     display: flex;
      flex-direction: column;
      position: relative;
- 
+     align-items: center;
     
     display: flex;
     flex-direction: column;
@@ -85,13 +93,28 @@ flex-direction: row;
 
 .lateral .imagen  {
 
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    background-color: #0c0344;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-color: #080235;
+    transition: 1s;
 
 }
+.lateral .imagen:hover  {
+ 
+  
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    background-color: #080235;
+    transition: 1s;
+    
+
+}
+
+
 
 #imgpersonal  {
 
@@ -100,17 +123,18 @@ flex-direction: row;
     border-radius: 50%;
      border-style: solid;
      border-color: white;
+     transition: 2s;
 
 }
 
 
-.lateral .titulo  {
+.lateral .slogan  {
 
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 20%;
     padding-bottom: 20%;
-    background-color: #0c0344;
+   
     padding-top: 20px;
     color:white;
      padding-left: 20%;
@@ -120,15 +144,57 @@ flex-direction: row;
 }
 
 
-.lateral .titulo  p{
-
-    background-color: #0c0344;
+.lateral .slogan  p{
+    
     color:white;
-     padding-left: 20%;
+  padding-left: 1px;
       font-family: Haettenschweiler;
+      font-size:25px;
+   
+
+}
+
+
+.lateral .seccion {
+
+    color:white;
+    padding-left: 20px;
+
+    width: 200px;
+    height: auto;
+
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size:20px;
 
 }
+
+.lateral .seccion  p{
+
+    color:white;
+    padding-left: 1px;
+     text-align: start;
+    width: 200px;
+    height: auto;
+ 
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:20px;
+
+}
+
+.lateral .seccion .titulo  p{
+
+    color:rgb(255, 255, 255);
+    padding-left: 1px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-decoration: underline rgb(138, 134, 134);  
+
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:22px;
+
+}
+
 
 
 .lateral .box{
@@ -136,13 +202,8 @@ flex-direction: row;
    
     width: 200px;
     height: 45px;
-   
     overflow: hidden;
-   
     position: relative;
-    display: inline-block;
-    background-color: #ffffff;
-    width: 100%;
     display: flex;
     flex-direction: row;
     
@@ -152,15 +213,30 @@ flex-direction: row;
 
 
 
-.imgdivision  {
+.lateral .imgdivision  {
 
     height:2px;
     width: 100%;
-    margin-left: 10%;
-    
+
+    position: relative;
+    align-content: flex-end;
      border-style: solid;
-     border-color: white;
+     border-color:rgb(138, 134, 134);
     border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transition: 2s;
+   
+
+}
+
+.lateral .imgdivision img{
+ 
+  padding-right: 0px;
+  height:90%;
+  width: 100%;
+  right: 0px;
 
 }
 
@@ -168,6 +244,9 @@ flex-direction: row;
 
 
 
+
+
+/* estilos de la zona central*/
 
 
 .main { grid-area: main; 
