@@ -3,13 +3,13 @@
 /* normalizamos*/
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'PT Sans', sans-serif;
-  
-   
+
+
 }
 
 
@@ -17,10 +17,12 @@
 /* estructura de la web*/
 
 
-.main { grid-area: main; 
+.main {
+    grid-area: main;
+    margin-bottom: 50px;
 
-   
-   
+
+
 }
 
 .grid-contenedor {
@@ -28,14 +30,15 @@
     grid-template-columns: 2fr 5fr 5fr;
     grid-template-rows: 60px 60px auto;
     grid-template-areas:
-      'lateral menu menu '
-      'lateral main main '
-      'lateral main main ';
+        'lateral menu menu '
+        'lateral main main '
+        'lateral main main '
+        'footer footer footer ';
 
-      background-image: linear-gradient(#040114,#2600ff80),url('../images/fondopc.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
+    background-image: linear-gradient(#040114, #2600ff80), url('../images/fondopc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
@@ -43,13 +46,13 @@
 
 
 
-body {    
-    
-    height:100%;
+body {
+
+    height: 100%;
     /*  background-image: linear-gradient(#080235,#2600ff80), url('../images/fondop.jpg');  */
-   
-   
- 
+
+
+
 }
 
 
@@ -61,17 +64,18 @@ body {
 
 /* estilos del menu superior*/
 
-.menu { grid-area: menu; 
+.menu {
+    grid-area: menu;
 
-position: relative;
-margin-left: 0;
-width: 100%;
-height: 90px;
-display:flex;
-justify-content: end;
-padding-right: 10%;
-padding-top: 10px;
-background:transparent;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+    padding-top: 10px;
+    background: transparent;
 
 
 }
@@ -82,8 +86,8 @@ background:transparent;
 /* contenedor botones del menú superior*/
 
 .menu .box {
-    
-   
+
+
     width: auto;
     height: 30px;
     border-radius: 10px;
@@ -101,14 +105,14 @@ background:transparent;
 
 
 
-.menu .box:hover{
+.menu .box:hover {
 
-    
-    
+
+
     width: auto;
     height: 30px;
     border-radius: 10px;
-    background-color:#ffffff;
+    background-color: #ffffff;
     margin-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -116,200 +120,199 @@ background:transparent;
     font-size: 1em;
     text-align: center;
     padding-top: 5px;
-   transition: 1s;
+    transition: 1s;
 
-   
+
 }
 
 
 /* elimino los efectos de los links por estética*/
 
 
-  .menu .box a{ 
+.menu .box a {
     text-decoration: none;
     background-color: transparent;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight:bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
     color: #080235;
     position: relative;
-  }
+}
 
 
 
 
 
-    .menu .box a:link{ 
-        text-decoration: none;
-        color:#080235;   
-        position: relative;
-      }
-  
+.menu .box a:link {
+    text-decoration: none;
+    color: #080235;
+    position: relative;
+}
 
 
 
-.menu .box a:visited{ 
-      font-style:normal;
-      color: #080235;
-      text-decoration: none;
-      position: relative;
-    
-    }
+
+.menu .box a:visited {
+    font-style: normal;
+    color: #080235;
+    text-decoration: none;
+    position: relative;
+
+}
 
 
 
 /* estilos de la zona lateral izq*/
 
 
-.lateral{ grid-area: lateral;
-    background-color:transparent;
-    display: flex;
-     flex-direction: column;
-     position: relative;
-     align-items: center;
+.lateral {
+    grid-area: lateral;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
+    position: relative;
+    align-items: center;
     height: 100%;
-    margin-right:0;
-    
+    margin-right: 0;
+
 
 }
 
-.lateral .imagen  {
+.lateral .imagen {
 
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 15%;
     padding-bottom: 15%;
-    background-color:transparent;
+    background-color: transparent;
     transition: 1s;
 
 }
-.lateral .imagen:hover  {
- 
-  
+
+.lateral .imagen:hover {
+
+
     padding-left: 12%;
     padding-right: 12%;
     padding-top: 12%;
     padding-bottom: 12%;
-    background-color:transparent;
+    background-color: transparent;
     transition: 1s;
-    
+
 
 }
 
 
 
-#imgpersonal  {
+#imgpersonal {
 
-    height:90%;
+    height: 90%;
     width: 90%;
     border-radius: 50%;
-     border-style: solid;
-     border-color: white;
-     transition: 2s;
+    border-style: solid;
+    border-color: white;
+    transition: 2s;
 
 }
 
 
-.lateral .nombre  {
+.lateral .nombre {
 
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 20%;
     padding-bottom: 10px;
     padding-top: 20px;
-    color:rgb(138, 134, 134);
-     padding-left: 20%;
-      font-family: Haettenschweiler;
-      font-size:20px;
+    color: rgb(138, 134, 134);
+    font-family: Haettenschweiler;
+    font-size: 20px;
 
 }
 
 
-.lateral .nombre  p{
-    
-    color:rgb(138, 134, 134);
+.lateral .nombre p {
+
+    color: rgb(138, 134, 134);
     padding-left: 1px;
-      font-family: Haettenschweiler;
-      font-size:20px;
-   
+    font-family: Haettenschweiler;
+    font-size: 20px;
+
 
 }
 
 
 .lateral .seccion {
 
-    color:white;
+    color: white;
     padding-left: 20px;
 
     width: 200px;
     height: auto;
 
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 
-      
+
 
 }
 
-.lateral .seccion  p{
+.lateral .seccion p {
 
-    color:white;
+    color: white;
     padding-left: 1px;
-     text-align: start;
+    text-align: start;
     width: 200px;
     height: auto;
- 
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size:20px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
 
 }
 
-.lateral .seccion .titulo  p{
+.lateral .seccion .titulo p {
 
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     padding-left: 1px;
-    
+
     margin-bottom: 10px;
     margin-top: 20px;
-    text-decoration: underline rgb(138, 134, 134);  
-    font-family:'Haettenschweiler';
-    font-size:22px;
+    text-decoration: underline rgb(138, 134, 134);
+    font-family: 'Haettenschweiler';
+    font-size: 22px;
 
 }
 
 
 
-.lateral .box{
+.lateral .box {
 
-   
+
     width: 200px;
     height: 45px;
     overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 
 /* divisor entre secciones gris */
 
 
-.lateral .imgdivision  {
+.lateral .imgdivision {
 
-    height:2px;
+    height: 2px;
     width: 100%;
     margin-top: 70px;
     margin-bottom: 40px;
     position: relative;
-     border-style: solid;
-     border-color:rgb(138, 134, 134);
+    border-style: solid;
+    border-color: rgb(138, 134, 134);
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-top-left-radius: 50%;
-   
+
 }
 
 
@@ -325,18 +328,18 @@ background:transparent;
     height: auto;
     display: flex;
     flex-flow: row wrap;
-   /* 
-    overflow-y:scroll; */ 
-   
+    /* 
+    overflow-y:scroll; */
 
 
-  }
 
-  
+}
 
-  /* caja principal */
 
-  .contenedor-central .banner{
+
+/* caja principal */
+
+.contenedor-central .banner {
     margin: 10px;
     position: relative;
     width: 1450px;
@@ -346,195 +349,236 @@ background:transparent;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
+    overflow: hidden;
     background: transparent;
-    
+
 
 }
 
 
 
-.contenedor-central .banner h1{
-   color:#ffffff;
-   display: flex;
-   position: relative;
-   font-size: 5em;
-margin: 20px;
-transition: 1s;
-
-}
-
-.contenedor-central .banner h1:hover{
-    color:#888888;
+.contenedor-central .banner h1 {
+    color: #ffffff;
     display: flex;
     position: relative;
     font-size: 5em;
- margin: 20px;
- transition: 1s;
- 
- }
+    margin: 20px;
+    transition: 1s;
 
-.contenedor-central .banner h2{
-    color:#888888;
+}
+
+.contenedor-central .banner h1:hover {
+    color: #888888;
+    display: flex;
+    position: relative;
+    font-size: 5em;
+    margin: 20px;
+    transition: 1s;
+
+}
+
+.contenedor-central .banner h2 {
+    color: #888888;
     display: flex;
     transition: 1s;
     position: relative;
     font-size: 1.5em;
-  
- }
 
- .contenedor-central .banner h2:hover{
-    color:#ffffff;
+}
+
+.contenedor-central .banner h2:hover {
+    color: #ffffff;
     display: flex;
     transition: 1s;
     position: relative;
     font-size: 1.5em;
-    text-decoration:underline overline; 
-  
- }
+    text-decoration: underline overline;
 
- .contenedor-central .banner h3{
-    color:#888888;
+}
+
+.contenedor-central .banner h3 {
+    color: #888888;
     display: flex;
     transition: 1s;
     position: relative;
     font-size: 2em;
     color: #464538;
- 
- }
 
- .contenedor-central .banner h3:hover{
-    color:#ffffff;
+}
+
+.contenedor-central .banner h3:hover {
+    color: #ffffff;
     display: flex;
     transition: 1s;
     position: relative;
     font-size: 2em;
-    text-decoration:underline overline; 
- 
- }
+    text-decoration: underline overline;
+
+}
 
 
 
 
 
-  /* cajas skills */
+/* cajas skills */
 
-  .contenedor-central .skills{
+.contenedor-central .skills {
     margin: 10px;
     position: relative;
     width: 470px;
     height: 400px;
     border-radius: 2px;
-    overflow: hidden; 
-    box-shadow: 2px 2px  2px 2px #888888;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px #888888;
     background: transparent;
-    
 
-}
-
-
- .contenedor-central .skills:hover{
-
-    margin: 10px;
-    position: relative;
-    width: 470px;
-    height: 400px;
-    border-radius: 2px;
-    overflow: hidden; 
-    box-shadow: 2px 2px  2px 2px #888888;
-   
-    
 
 }
 
 
 
+.contenedor-central .skills img {
 
-
-
-.contenedor-central .skills img{
-  
     border-radius: 5px;
-    
+
 }
 
-.contenedor-central .skills:hover img{
+.contenedor-central .skills:hover img {
 
-   
-  
+
+
     border-radius: 5px;
     overflow: hidden;
-    
+
 }
 
 
 
-  /* cajas pequeñas skills */
+/* cajas pequeñas skills */
 
-.contenedor-central .smskills{
+.contenedor-central .smskills {
     margin: 10px;
     position: relative;
     width: 348px;
     height: 300px;
     border-radius: 2px;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: transparent;
     transition: 1s;
-    
+
 
 }
 
 
- .contenedor-central .smskills:hover{
+.contenedor-central .smskills:hover {
 
     margin: 10px;
     position: relative;
     width: 348px;
     height: 300px;
     border-radius: 2px;
-    overflow: hidden; 
-   
+    overflow: hidden;
     transition: 1s;
-    
+
 
 }
 
 
 
-.contenedor-central .smskills img{
+.contenedor-central .smskills img {
 
     margin: 10px;
     position: relative;
     width: 223px;
     height: 248px;
     border-radius: 20px;
-    overflow: hidden; 
-   
+    overflow: hidden;
     transition: 1s;
-    
+
 
 }
 
 
-.contenedor-central .smskills img:hover{
+.contenedor-central .smskills img:hover {
 
     margin: 10px;
     position: relative;
     width: 253px;
     height: 278px;
     border-radius: 20px;
-    overflow: hidden; 
-   
+    overflow: hidden;
+
     transition: 1s;
-    
+
+
+}
+
+
+footer {
+    grid-area: footer;
+
+    background-color: #06011f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+
+}
+
+
+
+.footer_social {
+    grid-area: footer;
+
+    background-color: #06011f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 
 }
 
 
 
 
+.footer_social img {
 
+    margin: 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transition: 1s;
+
+
+}
+
+
+.footer_social img:hover {
+
+    margin: 10px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    transition: 1s;
+
+
+}
+
+
+.footer_copyrigth {
+
+    font-size: 1em;
+
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+}
