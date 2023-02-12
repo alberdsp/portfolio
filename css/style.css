@@ -13,7 +13,6 @@
 }
 
 
-
 /* estructura de la web*/
 
 
@@ -43,9 +42,6 @@
 }
 
 
-
-
-
 body {
 
     height: 100%;
@@ -54,12 +50,6 @@ body {
 
 
 }
-
-
-
-
-
-
 
 
 /* estilos del menu superior*/
@@ -139,16 +129,11 @@ body {
 }
 
 
-
-
-
 .menu .box a:link {
     text-decoration: none;
     color: #080235;
     position: relative;
 }
-
-
 
 
 .menu .box a:visited {
@@ -364,6 +349,7 @@ body {
 
 }
 
+
 .contenedor-central .banner h1:hover {
     color: #888888;
     display: flex;
@@ -412,9 +398,6 @@ body {
     text-decoration: underline overline;
 
 }
-
-
-
 
 
 /* cajas grandes skills */
@@ -494,13 +477,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
 /* cajas pequeñas smskills */
 
 .contenedor-central .smskills {
@@ -558,15 +534,10 @@ body {
     height: 278px;
     border-radius: 20px;
     overflow: hidden;
-
     transition: 1s;
 
 
 }
-
-
-
-
 
 
 /* area de portfolio */
@@ -578,17 +549,46 @@ body {
 .contenedor-central .portfolio {
     display: block;
     margin: 10px;
+    margin-top: 0%;
     position: relative;
-    width: 470px;
+    width: 700px;
     height: 400px;
     border-radius: 5px;
-    
+    background-repeat: no-repeat;
 
 }
 
 
-/* cajas grandes portfolio imagenes  */
+/* cajas grandes portfolio   */
 
+
+/* cajas grandes portfolio imagenes de fondo */
+
+#portfolio1 {
+
+    background-image: url("../images/mango-mini.png");
+   
+
+}
+
+
+#portfolio2 {
+  
+    background-image: url("../images/toyota-mini.png");
+
+}
+
+#portfolio3 {
+  
+    background-image: url("../images/variety-mini.png");
+
+}
+
+#portfolio4 {
+  
+    background-image: url("../images/square-mini.png");
+
+}
 
 
 .contenedor-central .portfolio .boxtextportfolio {
@@ -597,54 +597,96 @@ body {
     height: 80px;
     width: auto;
     opacity: 80%;
-    margin-top: 300px ;
+    margin-top: 280px ;
      margin-bottom: 0;
-     background-color: #070707;
+     background-color: #636363;
     transition: 1s;
     
 }
 
 
 
-.contenedor-central .portfolio .boxtextportfolios:hover {
+.contenedor-central .portfolio .boxtextportfolio:hover {
  
     
-    height: 80px;
+    height: 100px;
     width: auto;
     opacity: 80%;
-    margin-top: 300px ;
+    margin-top: 270px ;
      margin-bottom: 0;
-   background-color: #1f1f20;
-    transition: 1s;
+   background-color: #060607;
+    transition: 0.5s;
     
 }
 
 
-.contenedor-central .portfolio .boxtextportfolio .text {
-    
+.contenedor-central .portfolio .boxtextportfolio a {
+    text-decoration: none;
     position: absolute;
     color: #ffffff; 
     font-size: 1.2em;
-    bottom: 30px;
+    bottom: 70px;
     left: 30%;
     list-style:none;
+  
     
 }
 
 
+/* zona contacto */
 
 
+#h1contacto{
+
+   margin-right: 25%;
+    margin-left: 35px;
+    font-size: 2em;
+    margin-bottom: 0;
+
+}
 
 
+.formulario{
+    margin-top: 0px;
+    margin-left: 10%;
 
+}
 
+.formulario p{
+
+  
+    color:rgb(253, 253, 255);
+     padding-left: 5%;
+     font-size:25px;
+     margin-bottom: 20px;
+    
+}
+
+.formulario fieldset{
+
+    padding-top: 20px;
+    color:rgb(253, 253, 255);
+     padding-left: 5%;
+     font-size:25px;
+     width: 400px;
+     height: 600px;
+}
+
+.formulario .fieldset input{
+
+  
+    color:rgb(67, 67, 70);
+    font-size: 2em;
+     
+    
+}
 
 
 
 
 footer {
-    grid-area: footer;
 
+    grid-area: footer;
     background-color: #06011f;
     display: flex;
     flex-direction: column;
@@ -667,8 +709,6 @@ footer {
     height: 150px;
 
 }
-
-
 
 
 .footer_social img {
