@@ -1,223 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="Alberto Barberá" content="Contacto">
-    <meta name="keywords" content="práctica, portfolio,contacto">
-    <meta name="description" content=" Esta es la página de contacto de Alberto">
-    <title>Contactar con Alberto Barberá </title>
-    <!-- aqui declaro alguna clase de estylo para no repetir mucho los estilos-->
-    <style>
-        .textobody {
-            color: rgb(6, 6, 48);
-            font-family: Haettenschweiler;
-            font-size: 20px
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="portfolio, alberto, barberá, web">
+    <meta name="Alberto Barberá" content="portfolio">
+    <meta name="description" content=" Portfolio de  Alberto Barberá">
+    <title>Portfolio de Alberto Barberá </title>
 
-        .textofooter {
-            color: rgb(6, 6, 48);
-            font-family: Haettenschweiler;
-            font-size: 20px;
-            opacity: 50%
-        }
 
-        .textomenu {
-            color: white;
-            font-family: Haettenschweiler;
-            font-size: 30px;
-            padding-left: 20px;
-            padding-right: 20px;
-            text-decoration: none;
-
-        }
-
-        .boton {
-            background-color: rgb(6, 6, 48);
-            font-family: Arial;
-            font-size: 15px;
-            color: white;
-
-        }
-
-        body {
-
-            background-image: url('images/fondo.jpg');
-
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-
-        h1 {
-            color: rgb(6, 6, 48);
-            font-family: Arial;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- iniciamos una tabla para organizar el contenido contenido -->
-    <table>
+    <!-- iniciamos grid contenedor general  -->
+    <div class="grid-contenedor">
+
+        <!-- zona lateral -->
+
+        <div class="lateral">
+
+            <!-- hacemos una división para la imagen propia -->
+
+            <div class="imagen">
+                <img id="imgpersonal" src="images/yo.jpg" alt="mi imagen de portafolio">
+            </div>
 
 
+            <div class="nombre">
 
-        <tr style="height: 100%;">
+                <p>
+                    Alberto Barberá Ferrández
+                </p>
 
-            <!-- iniciamos dos columnas una lateral con la imagen y adicionales y otra contenido -->
-
-
-            <td style="width: 20%;background-color: rgb(6, 6, 48);height: 100%;">
-
-
-                <!-- hacemos una división para la imagen propia -->
-
-                <div style="padding-left: 20%;padding-right: 20%;padding-top: 20%;padding-bottom: 20%">
-                    <img style="height:90%;width: 90%;border-radius: 50%; border-style: solid;border-color: white;"
-                        src="images/yo.jpg" alt="mi imagen de portafolio">
-                </div>
+            </div>
 
 
-                <div>
-                    <p
-                        style="padding-top: 20px;color:white; padding-left: 20%; font-family: Haettenschweiler;font-size:20px">
-                        CONTACTO
-                    </p>
-
-                    <!-- hacemos una division para la imagen de division por estética  ojo solo quiero que se pegue a la derecha no a la izquierda-->
-                    <img style="padding-left: 20%;height:90%;width: 81%;left: 0px;" src="images/linea.jpg"
-                        alt="linea de division">
-                </div>
+            <div class="imgdivision">
 
 
+            </div>
 
-                <table style="padding-left: 15%">
-
-
-                    <td>
-                        <img style="padding-left: 20%;padding-bottom: 15px;height:20px;width: 20px;"
-                            src="images/localizacion.png" alt="imagen direccion">
-                    </td>
-                    <td>
-                        <p style="padding-top: 20px;color:white; padding-left: 10px; font-family:Cambria;">
-                            Residencia
-                        </p>
-                        <p style="color:white; padding-left: 10px; font-family:Cambria;font-style: normal;">
-                            Orihuela (Alicante)
-
-                            Spain
-                        </p>
-
-                    </td>
-                </table>
-                <table style="padding-left: 15%">
+            <div class="seccion">
 
 
-                    <td>
-                        <img style="padding-left: 20%;padding-bottom: 15px;height:20px;width: 20px;"
-                            src="images/telefono.png" alt="imagen telefono">
-                    </td>
-                    <td>
-                        <p style="padding-top: 20px;color:white; padding-left: 10px; font-family:Cambria;">
-                            Teléfono
-                        </p>
-                        <p style="color:white; padding-left: 10px; font-family:Cambria;font-style: normal;">
-                            Móvil 615286014
-                        </p>
-                    </td>
-                </table>
-                <table style="padding-left: 15%">
+                <!-- mis gustos-->
 
-
-                    <td>
-                        <img style="padding-left: 20%;padding-bottom: 40px;height:20px;width: 20px;"
-                            src="images/web.png" alt="imagen web">
-                    </td>
-                    <td>
-                        <p style="padding-top: 20px;color:white; padding-left: 10px; font-family:Cambria;">
-                            Web
-                        </p>
-                        <!-- la web no existe es solo de ejemplo-->
-                        <p><a style="color: white;padding-left: 10px;" href="index.html"> www.albertobarbera.es</a>
-                        </p>
-                        <p><a style="color: white;padding-left: 10px;" href="mailto:alberdsp@gmail.com">
-                                alberdsp@gmail.com</a>
-                        </p>
-
-                    </td>
-                </table>
-                <!-- hacemos una division para la imagen de division por estética  ojo solo quiero que se pegue a la derecha no a la izquierda-->
-                <div>
-
-
-                    <img style="padding-left: 20%;height:90%;width: 81%;left: 0px;" src="images/linea.jpg"
-                        alt="linea de division">
-                </div>
-
-                <div>
-                    <!-- aquí simplemente inserto un . del mismo color del fondo para darle más longitud a la banda lateral -->
-
-                    <p style="padding-top: 200px;color:rgb(6, 6, 48); ">
-                        .
-                    </p>
-                </div>
-
-
-            </td>
-
-
-
-
-            <!-- comenzamos con la parte central y el menú de navegación -->
-            <td style="height: 100%;padding-left: 25px;padding-bottom: 35%;">
-
-                <table>
-                    <td
-                        style="background-color:rgb(6, 6, 48);height: 50px;width:800px; padding-left: 20px;padding-right: 20px;">
-
-                        <nav style="text-align: center"><a class="textomenu" href="index.html">Currículum</a> | <a
-                                class="textomenu" href="portfolio.html">Portfolio</a> | <a class="textomenu"
-                                style="text-decoration:underline" href="contacto.html">Contacto</a>
-                        </nav>
-                    </td>
-                </table>
-
-
-                <!-- parte principal y título. -->
-
-                <main>
+                <div class="titulo">
                     <p>
-                    <h1 style="padding-left: 20%;">Contactar con Alberto</h1>
+                        LIFE STYLE
                     </p>
-                </main>
+
+                </div>
+
+                <p class="seccion">
+                    El campo <br>
+                    La montaña<br>
+                    La playa<br>
+                </p>
+
+
+            </div>
+
+
+            <div class="imgdivision">
+
+
+            </div>
+
+
+            <div class="seccion">
+
+                <div class="titulo">
+                    <p>
+                        SPORTS
+                    </p>
+
+                </div>
+
+                <p class="seccion">
+                    Padel <br>
+                    Running<br>
+                    Bike<br>
+                </p>
+
+            </div>
+
+
+        </div>
+        <!-- fin navegación lateral -->
+
+        <!-- comenzamos con la parte central y el menú de navegación -->
+        <div class="menu">
+
+            <div class="box">
+
+                <a href="index.html">Home</a>
+
+            </div>
+
+            <div class="box">
+
+                <a href="portfolio.html">Portfolio</a>
+
+            </div>
+
+            <div class="box">
+
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- fin del menu -->
+
+        <!-- comienzo del contenido central. -->
+
+        <div class="main">
+
+
+            <div class="contenedor-central">
+
+                 <!-- cargamos banner -->
+
+                 <div class="banner">
+        
+                    <h1 id="h1contacto">
+                        Contacta conmigo para más info, proyectos y soluciones.
+                    </h1>
+                   
+                </div>
 
                 <!-- formulario de contacto -->
+                <div class="formulario">
 
-                <p
-                    style="padding-top: 20px;color:rgb(6, 6, 48); padding-left: 27%; font-family: Haettenschweiler;font-size:25px">
-                    Formulario</p>
+
+                <p>Formulario</p>
 
                 <form method="post" action="enviar.php" enctype="multipart/form-data">
 
                     <!-- formulario, información personal -->
-                    <fieldset style="width:800px;border-color:rgb(6, 6, 48)">
+                    <fieldset >
                         <legend>Datos personales</legend>
-                        <label class="textobody">Nombre:<br /></label>
+                        <label >Nombre:<br /></label>
                         <input type="text" name="nombre" placeholder="Nombre" required><br>
                         <br>
-                        <label class="textobody">Apellidos:<br />
+                        <label >Apellidos:<br />
                             <input type="text" name="apellidos" placeholder="Apellidos" required></label><br />
                         <br>
-                        <label class="textobody">Empresa:<br />
+                        <label >Empresa:<br />
                             <input type="text" name="empresa" placeholder="Empresa" required></label><br />
                         <br>
-                        <label class="textobody">Teléfono:<br />
+                        <label >Teléfono:<br />
                             <input type="text" name="movil" pattern="[0-9]{9}" placeholder="666555555"
                                 required></label><br />
                         <br>
-                        <textarea id="asunto" name="asunto" rows="4" cols="50" style="text-align:left">Asunto...
+                        <textarea id="asunto" name="asunto" rows="4" cols="40" style="text-align:left">Asunto...
                 </textarea>
 
                         <div>
@@ -234,18 +180,40 @@
 
                     </fieldset>
                 </form>
-            </td>
+            </div>
 
-        </tr>
+            </div>
 
-
-    </table>
-
-
+        </div>
+    </div>
 
 
 
 </body>
-<footer class="textofooter" style="text-align: center"> Copyright © 2022 Alberto Barberá </footer>
+
+
+    <!-- cargamos footer -->
+<footer>
+
+
+    <!-- iconos social de momento sin enlaces -->
+
+    <div class="footer_social">
+
+        <img src="images/facebook.png" alt="icono facebook">
+        <img src="images/linkedin.png" alt="icono facebook">
+        <img src="images/twitter.png" alt="icono facebook">
+
+    </div>
+
+    <div class="footer_copyrigth">
+        Copyrigth @ 2023 Alberto Barberá
+
+    </div>
+
+    </div>
+
+</footer>
+
 
 </html>
