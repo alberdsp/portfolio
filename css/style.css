@@ -20,8 +20,6 @@
     grid-area: main;
     margin-bottom: 50px;
 
-
-
 }
 
 .grid-contenedor {
@@ -29,6 +27,7 @@
     grid-template-columns: 2fr 5fr 5fr;
     grid-template-rows: 60px 60px auto;
     grid-template-areas:
+        
         'lateral menu menu '
         'lateral main main '
         'lateral main main '
@@ -47,8 +46,6 @@ body {
     height: 100%;
     /*  background-image: linear-gradient(#080235,#2600ff80), url('../images/fondop.jpg');  */
 
-
-
 }
 
 
@@ -56,14 +53,13 @@ body {
 
 .menu {
     grid-area: menu;
-
     position: relative;
     margin-left: 0;
     width: 100%;
     height: 90px;
     display: flex;
-    justify-content: end;
-    padding-right: 10%;
+    justify-content: center;
+    padding-right: 7%;
     padding-top: 10px;
     background: transparent;
 
@@ -88,15 +84,12 @@ body {
     margin-right: 30px;
     font-size: 0.8em;
     text-align: center;
-    padding-top: 5px;
     transition: 1s;
     opacity: 100%;
 }
 
 
-
 .menu .box:hover {
-
 
 
     width: auto;
@@ -107,14 +100,15 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin-right: 30px;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
-    padding-top: 5px;
-    transition: 1s;
-
+    transition: 0.2s;
+    opacity: 100%;
+    border: 1px;
+    border-style: solid;
+    border-color: #ffffff;
 
 }
-
 
 /* elimino los efectos de los links por estética*/
 
@@ -122,16 +116,19 @@ body {
 .menu .box a {
     text-decoration: none;
     background-color: transparent;
+    font-size: 1.5em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     color: #080235;
     position: relative;
+
+
 }
 
 
 .menu .box a:link {
     text-decoration: none;
-    color: #080235;
+    color: #ffffff;
     position: relative;
 }
 
@@ -322,10 +319,11 @@ body {
 /* caja principal */
 
 .contenedor-central .banner {
-    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     position: relative;
     width: 1450px;
-    height: 350px;
+    height: auto;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -342,6 +340,7 @@ body {
 .contenedor-central .banner h1 {
     color: #ffffff;
     display: flex;
+    justify-content: center;
     position: relative;
     font-size: 5em;
     margin: 20px;
@@ -363,6 +362,7 @@ body {
 .contenedor-central .banner h2 {
     color: #888888;
     display: flex;
+      justify-content: center;
     transition: 1s;
     position: relative;
     font-size: 1.5em;
@@ -385,7 +385,6 @@ body {
     transition: 1s;
     position: relative;
     font-size: 2em;
-    color: #464538;
 
 }
 
@@ -409,7 +408,7 @@ body {
     width: 470px;
     height: 400px;
     border-radius: 5px;
-    
+
 
 }
 
@@ -417,63 +416,63 @@ body {
 /* cajas grandes skills imagenes de fondo */
 
 #skill1 {
-  
+
     background-image: url("../images/skill1.png");
 
 }
 
 
 #skill2 {
-  
+
     background-image: url("../images/skill2.png");
 
 }
 
 #skill3 {
-  
+
     background-image: url("../images/skill3.png");
 
 }
 
 
 .contenedor-central .skills .boxtextskills {
- 
-    
+
+
     height: 150px;
     width: auto;
     opacity: 80%;
-    margin-top: 250px ;
-     margin-bottom: 0;
-     background-color: #070707;
+    margin-top: 250px;
+    margin-bottom: 0;
+    background-color: #070707;
     transition: 1s;
-    
+
 }
 
 
 
 .contenedor-central .skills .boxtextskills:hover {
- 
-    
+
+
     height: 150px;
     width: auto;
     opacity: 80%;
-    margin-top: 250px ;
-     margin-bottom: 0;
-   background-color: #1f1f20;
+    margin-top: 250px;
+    margin-bottom: 0;
+    background-color: #1f1f20;
     transition: 1s;
-    
+
 }
 
 
 .contenedor-central .skills .boxtextskills .text {
-    
+
     position: absolute;
-    color: #ffffff; 
+    color: #ffffff;
     font-size: 1.2em;
     bottom: 30px;
     left: 30%;
-    list-style:none;
-    
+    list-style: none;
+
 }
 
 
@@ -567,78 +566,78 @@ body {
 #portfolio1 {
 
     background-image: url("../images/mango-mini.png");
-   
+
 
 }
 
 
 #portfolio2 {
-  
+
     background-image: url("../images/toyota-mini.png");
 
 }
 
 #portfolio3 {
-  
+
     background-image: url("../images/variety-mini.png");
 
 }
 
 #portfolio4 {
-  
+
     background-image: url("../images/square-mini.png");
 
 }
 
 
 .contenedor-central .portfolio .boxtextportfolio {
- 
-    
+
+
     height: 80px;
     width: auto;
     opacity: 80%;
-    margin-top: 280px ;
-     margin-bottom: 0;
-     background-color: #636363;
+    margin-top: 280px;
+    margin-bottom: 0;
+    background-color: #636363;
     transition: 1s;
-    
+    padding-top: 25px;
+    text-align: center;
 }
 
 
 
 .contenedor-central .portfolio .boxtextportfolio:hover {
- 
-    
+
+
     height: 100px;
     width: auto;
     opacity: 80%;
-    margin-top: 270px ;
-     margin-bottom: 0;
-   background-color: #060607;
+    margin-top: 270px;
+    margin-bottom: 0;
+    background-color: #060607;
+    padding-top: 30px;
     transition: 0.5s;
-    
+
 }
 
 
 .contenedor-central .portfolio .boxtextportfolio a {
+
     text-decoration: none;
-    position: absolute;
-    color: #ffffff; 
+    color: #ffffff;
     font-size: 1.2em;
-    bottom: 70px;
-    left: 30%;
-    list-style:none;
-  
-    
+
+
+
 }
 
 
 /* zona contacto */
 
 
-#h1contacto{
+#h1contacto {
 
-   margin-right: 25%;
+    margin-right: 25%;
     margin-left: 35px;
     font-size: 2em;
     margin-bottom: 0;
@@ -646,43 +645,145 @@ body {
 }
 
 
-.formulario{
+.formulario {
     margin-top: 0px;
     margin-left: 10%;
 
 }
 
-.formulario p{
+.formulario p {
 
-  
-    color:rgb(253, 253, 255);
-     padding-left: 5%;
-     font-size:25px;
-     margin-bottom: 20px;
-    
+
+    color: rgb(253, 253, 255);
+    padding-left: 5%;
+    font-size: 25px;
+    margin-bottom: 20px;
+
 }
 
-.formulario fieldset{
+.formulario fieldset {
 
     padding-top: 20px;
-    color:rgb(253, 253, 255);
-     padding-left: 5%;
-     font-size:25px;
-     width: 400px;
-     height: 600px;
+    color: rgb(253, 253, 255);
+    padding-left: 5%;
+    font-size: 25px;
+    width: 800px;
+    height: 650px;
 }
 
-.formulario .fieldset input{
+.formulario fieldset input {
 
-  
-    color:rgb(67, 67, 70);
-    font-size: 2em;
-     
+
+    color: rgb(67, 67, 70);
+    font-size: 0.8em;
+
+
+}
+
+.formulario fieldset textarea {
+
+
+    color: rgb(67, 67, 70);
+    font-size: 0.8em;
+    width: 90%;
+
+}
+
+
+.boton {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    color: rgb(67, 67, 70);
+    font-size: 0.8em;
+    border-radius: 10px;
+
+
+}
+
+.boton:hover {
+    margin-top: 10px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+    border-radius: 10px;
+    background-color: #06011f;
+
+}
+
+
+
+    /* para teléfonos moviles: */
+
+@media (max-width: 768px) {
+
+
+
+    .menu{
+
+        padding-right: 0;
+
+    }
+
+    .contenedor-central .banner h1 {
+
+        font-size: 2em;
+        margin: 20px;
+        transition: 1s;
+
+    }
+
+
+    .contenedor-central .banner h1:hover {
+
+        font-size: 2em;
+        margin: 20px;
+        transition: 1s;
+
+    }
+
+    .contenedor-central .banner h3 {
+      
+        font-size: 1.4em;
+
+    }
     
+    .contenedor-central .banner h3:hover {
+
+        font-size: 1.2em;
+    
+    }
+
+    .formulario {
+
+
+        color: rgb(67, 67, 70);
+        font-size: 0.8em;
+        width: 100px;
+
+
+    }
+
+    .formulario fieldset {
+
+        padding-top: 20px;
+        color: rgb(253, 253, 255);
+        padding-left: 5%;
+        font-size: 25px;
+        width: 400px;
+        height: 650px;
+
+
+    }
+
+
+
 }
 
+    /* fin del media para teléfonos moviles: */
 
 
+     /* footer */
 
 footer {
 
