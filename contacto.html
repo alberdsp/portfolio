@@ -13,6 +13,10 @@
     <meta name="Alberto Barberá" content="contacto">
     <meta name="description" content=" contactar con  Alberto Barberá">
     <title>Contacto</title>
+    <script src="js/navigation.js" defer></script>
+
+       <!-- libreria que vamos a utililzar para los alerts es Sweet alert -->
+       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 </head>
@@ -143,43 +147,30 @@
                 <div class="formulario">
 
 
-                    <p>Formulario</p>
-
-                    <form method="post" action="enviar.php" enctype="multipart/form-data">
-
-                        <!-- formulario, información personal -->
-                        <fieldset>
-                            <legend>Datos personales</legend>
-                            <label>Nombre:<br /></label>
-                            <input type="text" name="nombre" placeholder="Nombre" required><br>
-                            <br>
-                            <label>Apellidos:<br />
-                                <input type="text" name="apellidos" placeholder="Apellidos" required></label><br />
-                            <br>
-                            <label>Empresa:<br />
-                                <input type="text" name="empresa" placeholder="Empresa" required></label><br />
-                            <br>
-                            <label>Teléfono:<br />
-                                <input type="text" name="movil" pattern="[0-9]{9}" placeholder="666555555"
-                                    required></label><br />
-                            <br>
-                            <textarea id="asunto" name="asunto" rows="4" cols="40" style="text-align:left">Asunto...
-                </textarea>
-
-                            <div>
-
-                                <!-- el boton de envio pasa a un php pero no envia de momento -->
-
-                                <input class="boton" id="boton_enviar" type="submit" value="Enviar formulario" />
-                                <input class="boton" id="reset" type="reset" />
-
-
-                            </div>
-                        </fieldset>
-
-
-                        </fieldset>
-                    </form>
+                    <div class="formulario">
+                        <p>Formulario</p>
+                        <form name="contactForm" method="post" action="enviar.php" enctype="multipart/form-data"
+                            onsubmit="return validarFormulario()">
+                            <fieldset>
+                                <legend>Datos personales</legend>
+                                <label>Nombre:<br /></label>
+                                <input type="text" name="nombre" placeholder="Nombre" ><br><br>
+                                <label>Apellidos:<br />
+                                    <input type="text" name="apellidos" placeholder="Apellidos" ></label><br /><br>
+                                <label>Empresa:<br />
+                                    <input type="text" name="empresa" placeholder="Empresa" ></label><br /><br>
+                                <label>Teléfono:<br />
+                                    <input type="text" name="movil" placeholder="Teléfono" ></label><br /><br>
+                                <label>Email:<br />
+                                    <input type="email" name="email" placeholder="Email" ></label><br /><br>
+                                <textarea id="asunto" name="asunto" rows="4" cols="40"
+                                    style="text-align:left">Asunto...</textarea>
+                                <div>
+                                    <input class="boton" id="boton_enviar" type="submit" value="Enviar formulario" />
+                                    <input class="boton" id="reset" type="reset" />
+                                </div>
+                            </fieldset>
+                        </form>
                 </div>
 
             </div>
