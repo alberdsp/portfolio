@@ -1,0 +1,26 @@
+[
+  {
+    "id": "portfolio1",
+    "text": "Web colorida sobre frutas",
+    "href": "https://mango.org/",
+    "target": "_blank"
+  },
+  {
+    "id": "portfolio2",
+    "text": "Profesional website vehículos",
+    "href": "https://www.toyota.es/coches/yaris?gclid=EAIaIQobChMI-4iDuP6P_QIVwqfVCh09CQisEAAYASAAEgJIr_D_BwE&gclsrc=aw.ds",
+    "target": "_blank"
+  },
+  {
+    "id": "portfolio3",
+    "text": "Portal de publicidad",
+    "href": "https://variety.com/",
+    "target": "_blank"
+  },
+  {
+    "id": "portfolio4",
+    "text": "Portal comercial",
+    "href": "https://es.squarespace.com/",
+    "target": "_blank"
+  }
+]

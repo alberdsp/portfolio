@@ -545,6 +545,19 @@ body {
 
 /* cajas grandes portfolio */
 
+
+
+/* contenedor de trabajos */
+.contenedor-central .trabajos {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    overflow-y: auto;
+    
+}
+
 .contenedor-central .portfolio {
     display: block;
     margin: 10px;
