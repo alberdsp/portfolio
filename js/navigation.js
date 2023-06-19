@@ -1,8 +1,5 @@
 
 
-
-
-
 // función para validar el formulario de contacto
 
 function validarFormulario() {
@@ -13,10 +10,6 @@ function validarFormulario() {
     var email = document.forms["contactForm"]["email"].value;
 
 
-    console.log(nombre)
-    console.log(apellidos)
-    console.log(empresa)
-    console.log(telefono)
 
     if (nombre == "") {
         swal("Por favor, ingresa tu nombre");
@@ -33,6 +26,13 @@ function validarFormulario() {
 
         return false;
     }
+
+    if (telefono == "") {
+        swal("Por favor, ingresa tu número de teléfono");
+
+        return false;
+    }
+
     if (!validarTelefono(telefono)) {
 
         swal("inserta un número de teléfono válido");
@@ -51,27 +51,39 @@ function validarFormulario() {
         return false;
 
 
-        // función para validar el teléfono introducido
-
-        function validarTelefono(telefono) {
-            // eliminamos caracteres no validos
-            telefono = telefono.replace(/\D/g, '');
-
-            // checkeamos que tiene nueve numeros
-            if (telefono.length !== 9) {
-                return false;
-            }
-
-            return true;
-        }
-
-        function validarEmail(email) {
-            // validamos que contiene una @ y un . 
-            var patron = /@.+?\./;
-
-            // testeamos que el patrón funciona
-            return patron.test(email);
-        }
 
     }
+
+
+
+    // función para validar el teléfono introducido
+
+    function validarTelefono(telefono) {
+        // eliminamos caracteres no validos
+        telefono = telefono.replace(/\D/g, '');
+
+        // checkeamos que tiene nueve numeros
+        if (telefono.length !== 9) {
+
+            console.log(telefono);
+            return false;
+        } else {
+            return true;
+
+        }
+
+
+    }
+
+    function validarEmail(email) {
+        // validamos que contiene una @ y un . 
+        var patron = /@.+?\./;
+
+        // testeamos que el patrón funciona
+        return patron.test(email);
+    }
+
+
+
 }
+

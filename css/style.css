@@ -519,8 +519,9 @@ body {
     height: 248px;
     border-radius: 20px;
     overflow: hidden;
-    transition: 1s;
-
+    transition: transform 1.5s ease;
+  
+      
 
 }
 
@@ -533,7 +534,7 @@ body {
     height: 278px;
     border-radius: 20px;
     overflow: hidden;
-    transition: 1s;
+    transition: transform 1.5s ease;
 
 
 }

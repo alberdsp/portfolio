@@ -1,4 +1,4 @@
-// creamos una clase para los trabajos con el id, el texto el enlace y el objetivo
+// creamos una clase para los trabajos con el id, el texto, el enlace y el objetivo
 class Trabajo {
   constructor(id, text, href, target) {
     this.id = id;
@@ -10,7 +10,7 @@ class Trabajo {
 
 
 
-// leemos y parseamos el fichero json que contiene los datos
+// leemos y parseamos el fichero json que contiene los datos en forma de promesa
 
 fetch('data/portfolio.json')
   .then(response => response.json())
@@ -55,6 +55,8 @@ fetch('data/portfolio.json')
     
   })
   .catch(error => {
+
+    swal("Debes habilitar las CORS en tu servidor para porder cargar el contenido");
     console.error('Error al cargar el archivo de datos:', error);
   });
 
